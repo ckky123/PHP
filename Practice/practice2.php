@@ -1,24 +1,24 @@
 <html>
 <head>
 </head>
-<body>
+
+
+<html><body>
 <?php
-
-echo '<table widith=\"100%\" >';
-
-for($i=0;$i<=9;$i++)
+$i = 0;
+echo "<table width=\"100%\">";
+for($j=0;$j<9;$j++)
 {
-    echo '<tr>';
- for($j=0;$j<=9;$j++)
- {
-    echo '<td>'.$i,$j.'</td>';
-    if($i%10==0&& $i!=0)
-    {
-        echo'</tr>';
-    }
- }
+echo "<tr>";
+while($i < 100)
+{  
+    
+    if($i%10 == 0&&$i!=0){ echo "</tr>";}
+    echo "<td>".$i."<td>";
+    $i=$i+1;
 }
-
+echo "</table>";
+}
 ?>
-</body>
-</html>
+</body></html>
+
