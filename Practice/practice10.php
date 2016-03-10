@@ -1,13 +1,11 @@
 <?php
-function IsEqu ($a){
-    foreach($a as $b){ 
-        if($a['i']===$a['j']){
-        return true;
-        }
-        else{
-        return false;
-        }
+function IsEqu ($a){     
+    if($a['i']===$a['j']){
+    return true;
     }
+    else{
+    return false;
+    }    
 }
 
 $a['i']=array(1,2,3,4,5);
